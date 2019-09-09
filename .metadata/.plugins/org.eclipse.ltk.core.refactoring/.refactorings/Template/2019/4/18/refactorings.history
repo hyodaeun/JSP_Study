@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;letter.txt, now.txt, secret.txt&apos; to &apos;movie&apos;" description="Move 3 resources to &apos;movie&apos;" destination="WebContent/WEB-INF/movie" element1="WebContent/WEB-INF/letter.txt" element2="WebContent/WEB-INF/now.txt" element3="WebContent/WEB-INF/secret.txt" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="3" stamp="1556496529716" updateReferences="true"/>
+</session>

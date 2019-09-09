@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Chapter07</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+  	<servlet-name>xxxx</servlet-name>
+  	<jsp-file>/study_03.jsp</jsp-file>
+  	<init-param>
+  		<param-name>id</param-name>
+  		<param-value>hong</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>pw</param-name>
+  		<param-value>1234</param-value>
+  	</init-param>  	
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>홍길동</param-value>
+  	</init-param> 
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>xxxx</servlet-name>
+	<url-pattern>/mirim.do</url-pattern>  
+  </servlet-mapping>
+
+	<context-param>
+		<description>로깅 여부</description>
+		<param-name>logEnabled</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	
+	<context-param>
+		<description>디버깅 레벨</description>
+		<param-name>debugLevel</param-name>
+		<param-value>5</param-value>
+	</context-param>
+</web-app>
